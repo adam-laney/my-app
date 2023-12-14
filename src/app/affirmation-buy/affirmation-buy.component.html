@@ -1,0 +1,15 @@
+
+<table class="blueTable">
+    <thead>
+      <th>Cup Text</th>
+      <th>Cup Buy Link</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let group of affirmationBuy">
+        <td>{{group.Affirmation}}</td>
+        <td>
+          <a [href]="group.CupAddress">Buy</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
